@@ -1,0 +1,959 @@
+body{
+    overflow-x: hidden;
+    font-family: sans-serif;
+    margin: 0%;
+}
+
+.nav{
+    display: flex;
+    gap: 4em;
+    width: 100vw;
+    position: fixed;
+    background-color: rgb(200,147,132);
+    padding: 1%;
+    font-size: 1.5em;
+    z-index: 10;
+    top: -3%;
+}
+
+.nav li{
+    list-style: none;
+    a{
+        text-decoration: none;
+        color: white;
+    }
+
+    a:hover{
+      color: black;
+    }
+}
+
+
+
+.heroSection{
+    display: flex;
+}
+
+.heroWhite{
+    width: 60vw;  
+    height: 93vh;
+    background-color: azure;
+
+   }
+
+.heroContent{
+    width: 30vw;
+    position: relative;
+    top: 40%;
+    left: 20%;
+}
+
+.heroPink{
+   width: 50vw;
+   margin-top: -1%;
+   height: 95vh;
+   background-color: rgb(200,147,132);
+}
+
+#heroImage{
+    position: absolute;
+    width: 25%;
+    top: 20%;
+    right: 30%;
+    border-radius: 1em;
+    box-shadow: 0 4px 8px 0 rgba(44, 44, 44, 0.2), 0 6px 20px 0 rgba(27, 27, 27, 0.19);
+
+}
+.heroButtons{
+    display: flex;
+    gap: 10%;
+    margin-top: 5%;
+    
+}
+.heroSection button{
+    background-color: rgb(123, 34, 49) ;
+    padding: 1em;
+    color: white;
+    border: none;  
+    border-radius: 1em; 
+    width: 30%; 
+    padding: 5%;
+    font-size: 0.8em;
+}
+
+#welcomeText{
+    color:rgb(123, 34, 49)  ;
+    font-size: 1em;
+}
+
+#heroText{
+    font-size: 1em;
+}
+
+.heroSection h1{
+    font-size: 2.5em;
+}
+
+
+
+.bookReviews{
+    h1{
+        text-align: center;
+        font-size: 3em;
+        color: rgb(123, 34, 49) ;
+        margin-top: 4%;
+
+    }
+}
+
+.bookCovers{
+    display: flex;
+    gap: 8%;
+    padding: 3%;
+    padding-top: 0%;
+
+}
+
+.bookClubText{
+    a{
+        text-decoration: none;
+        color: white;
+    }
+}
+
+#trevorBook{
+  width: 22vw;
+  box-shadow: 0 4px 8px 0 rgba(44, 44, 44, 0.2), 0 6px 20px 0 rgba(27, 27, 27, 0.19);
+  
+
+  a{
+    text-decoration: none;
+    color: black;
+  }
+
+  a:hover{
+    color: rgb(123, 34, 49) ;
+  }
+}
+.babylonBook, .trevorBook,.sunsBook{
+    border: solid 1px brown;
+    height: 75vh;
+    padding: 2%;
+    box-shadow: inset 4px 4px 10px  #dfb4b4, inset -4px -4px 10px #d3b1b1;
+
+}
+#babylonBook{
+   width: 22vw;
+   box-shadow: 0 4px 8px 0 rgba(44, 44, 44, 0.2), 0 6px 20px 0 rgba(27, 27, 27, 0.19);
+   transform: scale(1.05);
+
+}
+
+#sunsBook{
+  width: 22vw;
+  box-shadow: 0 4px 8px 0 rgba(44, 44, 44, 0.2), 0 6px 20px 0 rgba(27, 27, 27, 0.19);
+  transform: scale(1.05);
+
+}
+
+.bookClub{
+    display: flex;
+    width: 80vw;
+    justify-content: center;
+    position: relative;
+    left: 4%;
+    margin-top: 4%;
+}
+
+.bookClubImage{
+width: 50vw;
+padding-left: 80px;
+
+}
+#bookClubImage{
+    width: 30vw;
+    border-radius: 2em;
+
+}
+
+.bookClubText{
+    width: 40vw;
+    font-size: 1.3em;
+    position: relative;
+    top: 12vh;
+
+    h1{
+   font-size: 2em;
+    }
+}
+
+.bookClubText button{
+    background-color:rgb(123, 34, 49);
+    color: white;
+    border: none;
+    padding: 0.7em;
+    font-size: 1em;
+    border-radius: 0.7em;
+}
+
+
+.form{
+    justify-content: center;
+    width: 50vw;
+    position: relative;
+    left: 20%;
+    margin-top: 5%;
+    background-color: rgb(246,216,197);
+    padding: 5%;
+    border-radius: 1em;
+
+}
+
+#input{
+    padding: 0.5%;
+    width: 15vw;
+}
+
+label{
+    font-size: 1em;
+}
+#footer{
+    text-align: center;
+    margin-top: 5%;
+}
+#readButton{
+    text-decoration: none;
+    color: white;
+
+}
+
+#readTrevor{
+    text-decoration: none;
+    color: rgb(123, 34, 49)  ;
+    text-align: center;
+    font-size: 1.5em;
+    
+}
+
+@media only screen and (max-width:400px) and (min-width:0px){
+
+body{
+    margin: 0;
+}
+
+
+    .heroSection{
+        flex-direction: column;
+    }
+
+
+.nav{
+    display: flex;
+    gap: 1em;
+    width: 100vw;
+    padding: 1%;
+    font-size: 0.9em;
+    z-index: 10;
+    top: 1%;
+}
+
+
+
+.heroWhite{
+    width: 60vw;  
+    height: 93vh;
+     background-color: white;
+
+   }
+
+.heroContent{
+    width: 100vw;
+    top: 55%;
+    left: 1%;
+    text-align: center;
+}
+
+.heroPink{
+   width: 100vw;
+   margin-top: 50%;
+   height: 0.5%;
+   background-color:white;
+}
+
+#heroImage{
+    position: absolute;
+    width: 50%;
+    top: 14%;
+    right: 28%;
+    border-radius: 1em;
+
+}
+
+
+#welcomeText{
+    color:rgb(123, 34, 49)  ;
+    font-size: 1em;
+}
+
+#heroText{
+    font-size: 1em;
+}
+
+.heroSection h1{
+    font-size: 2em;
+}
+
+.heroSection button{
+   
+    width: 50%;
+    margin-left: 20%; 
+  
+}
+
+
+
+.bookReviews{
+    h1{
+        font-size: 2em;
+
+    }
+}
+
+.bookCovers{
+flex-direction: column; 
+height: 40vh ;
+}
+
+
+
+#babylonBook{
+    width: 50vw;
+    position: relative;
+   left: 15%;
+margin-top: 4%;
+
+}
+ 
+ #sunsBook{
+   width: 50vw;
+   position: relative;
+   left: 15%;
+margin-top: 4%;
+ 
+ }
+
+ #trevorBook{
+        width: 50vw;
+        position: relative;
+        left: 15%;
+     margin-top: 4%;
+
+ }
+
+
+ #readTrevor{
+  
+    font-size: 1em;
+}
+
+
+
+
+
+.bookClub{
+    flex-direction: column;
+    width: 100vw;
+    position: relative;
+    margin-top: 0%;
+    top: 150vh;
+}
+
+.bookClubImage{
+width: 60vw;
+padding-left: 50px;
+
+}
+#bookClubImage{
+    width: 70vw;
+    border-radius: 2em;
+
+}
+
+.bookClubText{
+    width: 90vw;
+    font-size: 1em;
+    line-height: 30px;
+
+    h1{
+   font-size: 1em;
+    }
+}
+
+.bookClubText button{
+    font-size: 1em;
+    border-radius: 0.7em;
+    width: 40%;
+}
+
+
+
+.form{
+    justify-content: center;
+    width: 80vw;
+    position: relative;
+    top: 160vh;
+    left: 5%;
+    margin-top: 10%;
+    background-color: rgb(246,216,197);
+    padding: 5%;
+    border-radius: 1em;
+    h1{
+        font-size: 1em;
+    }
+
+}
+
+#input{
+    padding: 0.5%;
+    width: 60vw;
+}
+
+label{
+    font-size: 1em;
+}
+#footer{
+    text-align: center;
+    position: relative;
+    top: 160vh;
+}
+}
+
+
+
+@media only screen and (max-width:600px) and (min-width:401px){
+
+    body{
+        margin: 0;
+    }
+    
+    
+        .heroSection{
+            flex-direction: column;
+        }
+    
+    
+    .nav{
+        display: flex;
+        gap: 1em;
+        width: 100vw;
+        padding: 1%;
+        font-size: 0.9em;
+        z-index: 10;
+        top: 1%;
+    }
+    
+    
+    
+    .heroWhite{
+        width: 60vw;  
+        height: 93vh;
+        background-color: white;
+    
+       }
+    
+    .heroContent{
+        width: 100vw;
+        top: 55%;
+        left: 1%;
+        text-align: center;
+    }
+    
+    .heroPink{
+       width: 100vw;
+       margin-top: 5%;
+       height: 0.5%;
+       background-color:white;
+
+    }
+    
+    #heroImage{
+        position: absolute;
+        width: 50%;
+        top: 14%;
+        right: 28%;
+        border-radius: 1em;
+    
+    }
+    
+    
+    #welcomeText{
+        color:rgb(123, 34, 49)  ;
+        font-size: 1em;
+    }
+    
+    #heroText{
+        font-size: 1em;
+    }
+    
+    .heroSection h1{
+        font-size: 2em;
+    }
+    
+    .heroSection button{
+       
+        width: 50%;
+        margin-left: 20%; 
+      
+    }
+    
+    
+    
+    .bookReviews{
+
+        position: relative;
+        top: 2%;
+        h1{
+            font-size: 2em;
+    
+        }
+    }
+    
+    .bookCovers{
+    flex-direction: column; 
+   
+    }
+
+    .babylonBook, .trevorBook,.sunsBook{
+        border: solid 1px brown;
+        height: 45vh;
+        padding: 2%;
+        box-shadow: inset 4px 4px 10px  #dfb4b4, inset -4px -4px 10px #d3b1b1;
+    
+    }
+    
+    
+    
+    
+    #babylonBook{
+        width: 50vw;
+        position: relative;
+       left: 15%;
+    margin-top: 4%;
+    
+    }
+     
+     #sunsBook{
+       width: 50vw;
+       position: relative;
+       left: 15%;
+    margin-top: 4%;
+     
+     }
+    
+     #trevorBook{
+            width: 50vw;
+            position: relative;
+            left: 15%;
+         margin-top: 4%;
+    
+     }
+    
+    
+     #readTrevor{
+      
+        font-size: 1em;
+    }
+    
+    
+    
+    
+    
+    .bookClub{
+        flex-direction: column;
+        width: 100vw;
+        position: relative;
+        margin-top: 0%;
+        top: 5vh;
+    }
+    
+    .bookClubImage{
+    width: 60vw;
+    padding-left: 50px;
+    
+    }
+    #bookClubImage{
+        width: 70vw;
+        border-radius: 2em;
+    
+    }
+    
+    .bookClubText{
+        width: 90vw;
+        font-size: 1em;
+        line-height: 30px;
+    
+        h1{
+       font-size: 1.7em;
+        }
+    }
+    
+    .bookClubText button{
+        font-size: 1em;
+        border-radius: 0.7em;
+        width: 40%;
+    }
+    
+    
+    
+    .form{
+        justify-content: center;
+        width: 80vw;
+        position: relative;
+        top: 15vh;
+        left: 5%;
+        margin-top: 10%;
+        background-color: rgb(246,216,197);
+        padding: 5%;
+        border-radius: 1em;
+        h1{
+            font-size: 1em;
+        }
+    
+    }
+    
+    #input{
+        padding: 0.5%;
+        width: 60vw;
+    }
+    
+    label{
+        font-size: 1em;
+    }
+    #footer{
+        text-align: center;
+        position: relative;
+        top: 15vh;
+    }
+    }
+
+
+
+@media only screen and (max-width:768px) and (min-width:601px){
+
+
+
+    .heroSection{
+        display: flex;
+        width: 100vw;
+    }
+    
+    .heroWhite{
+        width: 60vw;  
+        height: 70vh;
+        background-color: azure;
+    
+       }
+    
+    .heroContent{
+        width: 25vw;
+        position: relative;
+        top: 25%;
+        left: 10%;
+    }
+    
+    .heroPink{
+       width: 50vw;
+       margin-top: -1%;
+       height: 70vh;
+       background-color: rgb(200,147,132);
+    }
+    
+    #heroImage{
+        position: absolute;
+        width: 35%;
+        top: 20%;
+        right: 15%;
+        border-radius: 1em;
+    
+    }
+    .heroButtons{
+        display: flex;
+        gap: 10%;
+        margin-top: 5%;
+        
+    }
+    .heroSection button{
+        background-color: rgb(123, 34, 49) ;
+        padding: 1em;
+        color: white;
+        border: none;  
+        border-radius: 1em; 
+        width: 60%; 
+        padding: 5%;
+        font-size: 0.8em;
+    }
+    
+    #welcomeText{
+        color:rgb(123, 34, 49)  ;
+        font-size: 1em;
+    }
+    
+    #heroText{
+        font-size: 1em;
+    }
+    
+    .heroSection h1{
+        font-size: 2.5em;
+    }
+
+
+
+.bookReviews{
+    margin-left: -1%;
+    h1{
+        text-align: center;
+        font-size: 2em;
+        color: rgb(123, 34, 49) ;
+        margin-top: 5%;
+
+    }
+}
+
+.babylonBook, .trevorBook,.sunsBook{
+    border: solid 1px brown;
+    height: 30vh;
+    padding: 2%;
+    box-shadow: inset 4px 4px 10px  #dfb4b4, inset -4px -4px 10px #d3b1b1;
+
+}
+
+
+#readTrevor{
+  
+    font-size: 1em;
+}
+
+
+
+
+.bookClub{
+    width: 90vw;
+    margin-top: 4%;
+    margin-bottom: 5%;
+    height: 50vh;
+}
+
+.bookClubImage{
+width: 60vw;
+padding-left: 50px;
+
+}
+#bookClubImage{
+    width: 30vw;
+    margin-top: 55%;
+    border-radius: 2em;
+
+}
+
+.bookClubText{
+    width: 90vw;
+    margin-top: -10%;
+    font-size: 1em;
+    line-height: 30px;
+
+    h1{
+   font-size: 2em;
+    }
+}
+
+.bookClubText button{
+    font-size: 1em;
+    border-radius: 0.7em;
+    width: 40%;
+}
+    
+
+
+
+.form{
+    width: 80vw;
+    position: relative;
+    top: 1vh;
+   
+    left: 2%;
+   h1{
+    font-size: 1.5em;
+   }
+
+}
+
+
+
+.nav{
+    position: fixed;
+    top: 0%;
+}
+.footer{
+    position: relative;
+    top: 70vh;
+}
+}
+
+
+@media only screen and (max-width:1024px) and (min-width:769px){
+    
+    .heroSection{
+        display: flex;
+    }
+    
+    .heroWhite{
+        width: 60vw;  
+        height: 70vh;
+        background-color: azure;
+    
+       }
+    
+    .heroContent{
+        width: 30vw;
+        position: relative;
+        top: 25%;
+        left: 10%;
+    }
+    
+    .heroPink{
+       width: 50vw;
+       margin-top: -1%;
+       height: 70vh;
+       background-color: rgb(200,147,132);
+    }
+    
+    #heroImage{
+        position: absolute;
+        width: 35%;
+        top: 20%;
+        right: 15%;
+        border-radius: 1em;
+    
+    }
+    .heroButtons{
+        display: flex;
+        gap: 10%;
+        margin-top: 5%;
+        
+    }
+    .heroSection button{
+        background-color: rgb(123, 34, 49) ;
+        padding: 1em;
+        color: white;
+        border: none;  
+        border-radius: 1em; 
+        width: 60%; 
+        padding: 5%;
+        font-size: 1em;
+    }
+    
+    #welcomeText{
+        color:rgb(123, 34, 49)  ;
+        font-size: 1.5em;
+    }
+    
+    #heroText{
+        font-size: 1.8em;
+    }
+    
+    .heroSection h1{
+        font-size: 2.5em;
+    }
+
+
+
+.bookReviews{
+    h1{
+        text-align: center;
+        font-size: 2em;
+        color: rgb(123, 34, 49) ;
+        margin-top: 5%;
+
+    }
+}
+
+
+#readTrevor{
+  
+    font-size: 1em;
+}
+
+
+
+
+.bookClub{
+    width: 90vw;
+    margin-top: 4%;
+    margin-bottom: 5%;
+    height: 50vh;
+}
+
+.bookClubImage{
+width: 60vw;
+padding-left: 50px;
+
+}
+#bookClubImage{
+    width: 30vw;
+    margin-top: 50%;
+    border-radius: 2em;
+
+}
+
+.bookClubText{
+    width: 90vw;
+    margin-top: -10%;
+    font-size: 1.5em;
+    line-height: 30px;
+
+    h1{
+   font-size: 2em;
+    }
+}
+
+.bookClubText button{
+    font-size: 1em;
+    border-radius: 0.7em;
+    width: 40%;
+}
+    
+
+.babylonBook, .trevorBook,.sunsBook{
+    border: solid 1px brown;
+    height: 30vh;
+    padding: 2%;
+    box-shadow: inset 4px 4px 10px  #dfb4b4, inset -4px -4px 10px #d3b1b1;
+
+}
+
+.form{
+    width: 80vw;
+   
+    left: 2%;
+   h1{
+    font-size: 2em;
+   }
+
+}
+
+
+
+.nav{
+    position: fixed;
+    top: 0%;
+}
+
+
+}
+
+
+@media only screen and (max-width:1280px) and (min-width:1025px){
+
+
+}
+
