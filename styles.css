@@ -1078,7 +1078,7 @@ padding-left: 50px;
 
 .babylonBook, .trevorBook,.sunsBook{
     border: solid 1px brown;
-    height: 70vh;
+    height: 40vh;
     padding: 2%;
     box-shadow: inset 4px 4px 10px  #dfb4b4, inset -4px -4px 10px #d3b1b1;
 
